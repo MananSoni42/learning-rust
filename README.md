@@ -10,9 +10,20 @@
 ## Modules
 
 ### minigrep
-A simpe CLI grep clone that searches files for patterns. Accepts command line arguements and extra
-configuration options can be set using environment variables  
+A simpe CLI grep clone that searches files for patterns.  
+Accepts command line arguements and extra configuration options can be set using environment variables    
+
 Run `minigrep/minigrep` to get more details
+
+```
+Usage: minigrep [filename] [query word]  
+Environment vars:  
+- CASE_INSENSITIVE: performs case insensitive search if set  
+- EXACT: Only matches exact queries if set
+```
+
+### Mergesort
+Implementing sequential and parallel merge sort implementations
 
 ## Resources
 * [ ] [The Rust Programming Language (official book)](https://doc.rust-lang.org/book/)

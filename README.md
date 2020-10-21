@@ -22,8 +22,22 @@ Environment vars:
 - EXACT: Only matches exact queries if set
 ```
 
+
 ### Mergesort
-Implementing sequential and parallel merge sort implementations
+Implement sequential and parallel merge sort (iterative) implementations
+
+The benchmark is run using [criterion.rs](https://github.com/bheisler/criterion.rs) and uses reverse sorted lists for comparison.
+To run it yourself run the `cargo bench` command within the `merge_sort` directory
+
+Comparison plots:   
+1. Sequential merge sort  
+![line graph seq](merge_sort/assets/lines_seq.jpg)
+
+2. Parallel merge sort  
+![line graph par](merge_sort/assets/lines_par.jpg)
+
+3. Comparing both  
+![line graph compare](merge_sort/assets/lines_comp.jpg)
 
 ## Resources
 * [ ] [The Rust Programming Language (official book)](https://doc.rust-lang.org/book/)
